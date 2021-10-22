@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="first_lesson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-6e-RP5">
+                                <rect key="frame" x="127" y="413" width="160" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="GNx-av-mi2"/>
+                                    <constraint firstAttribute="height" constant="80" id="mmV-nl-2wP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJl-gN-dMD">
+                                <rect key="frame" x="127" y="543" width="160" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4Y-Ai-3WN">
+                                <rect key="frame" x="170.5" y="282" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Кнопка"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFA-Pp-7zd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yJl-gN-dMD" firstAttribute="top" secondItem="h0D-6e-RP5" secondAttribute="bottom" constant="50" id="1X4-i6-Wmi"/>
+                            <constraint firstItem="yJl-gN-dMD" firstAttribute="centerX" secondItem="h0D-6e-RP5" secondAttribute="centerX" id="4V5-wf-bmy"/>
+                            <constraint firstItem="h0D-6e-RP5" firstAttribute="top" secondItem="R4Y-Ai-3WN" secondAttribute="bottom" constant="100" id="Da7-4N-NHm"/>
+                            <constraint firstItem="h0D-6e-RP5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FuT-L1-1iv"/>
+                            <constraint firstItem="h0D-6e-RP5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ewW-70-pqc"/>
+                            <constraint firstItem="yJl-gN-dMD" firstAttribute="width" secondItem="h0D-6e-RP5" secondAttribute="width" id="i52-P0-cAd"/>
+                            <constraint firstItem="R4Y-Ai-3WN" firstAttribute="centerX" secondItem="h0D-6e-RP5" secondAttribute="centerX" id="pjd-Uy-Fol"/>
+                            <constraint firstItem="yJl-gN-dMD" firstAttribute="height" secondItem="h0D-6e-RP5" secondAttribute="height" id="s1k-xw-p1i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonMy" destination="R4Y-Ai-3WN" id="or8-iv-3Ov"/>
+                        <outlet property="greenView" destination="h0D-6e-RP5" id="chW-kt-6jk"/>
+                        <outlet property="topPaddingConstraint" destination="1X4-i6-Wmi" id="bIz-Wc-cod"/>
+                        <outlet property="view2" destination="yJl-gN-dMD" id="b9p-eN-Z6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
